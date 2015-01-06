@@ -6,5 +6,5 @@ for dir in logs tmp pid cache  env; do
 	mkdir -p $dir
 done
 [ -d "/opt/repo/logs" ] && rmdir /opt/repo/logs
+sed -i 's/opt\/repo:\/bin\/bash/opt\/repo\/versions\/8.0.9\/temp:\/bin\/bash/g' "/etc/passwd"
 ln -s /opt/repo/versions/8.0.9/logs /opt/repo/logs
-
