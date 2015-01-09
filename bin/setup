@@ -2,7 +2,7 @@
 
 set -u
 
-for dir in logs tmp pid cache  env; do
+for dir in logs tmp pid cache home env; do
 	mkdir -p $dir
 done
 [ -d "/opt/repo/logs" ] && rmdir /opt/repo/logs
