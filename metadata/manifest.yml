@@ -11,7 +11,7 @@ Cartridge-Vendor: Jelastic
 Categories:
   - service
   - embedded
-Source-Url: https://github.com/jelastic-public-cartridges/openshift-jelastic-tomcat8-v809.git
+Source-Url: https://github.com/SiryjVyiko/openshift-jelastic-tomcat8-v809.git
 Website: http://jelastic.com/
 Help-Topics:
   "Developer Center": https://jelastic.com
