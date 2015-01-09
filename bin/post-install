@@ -1,0 +1,3 @@
+#!/bin/bash -e
+
+sed -i 's/opt\/repo:\/bin\/bash/opt\/repo\/versions\/8.0.9\/temp:\/bin\/bash/g' "/etc/passwd"
