@@ -1,3 +1,1 @@
 #!/bin/bash -e
-
-sed -i 's/opt\/repo:\/bin\/bash/opt\/repo\/home:\/bin\/bash/g' "/etc/passwd"
