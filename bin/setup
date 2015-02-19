@@ -2,9 +2,15 @@
 
 set -u
 
-for dir in logs tmp pid cache  env; do
+for dir in logs tmp pid cache env home; do
 	mkdir -p $dir
 done
+
+sed -i 's/opt\/repo:\/bin\/bash/opt\/repo\/home:\/bin\/bash/g' "/etc/passwd"
+
+if [ -d "/opt/repo/.ssh" ] ; then
+    mv /opt/repo/.ssh /opt/repo/home/
+fi
+
 [ -d "/opt/repo/logs" ] && rmdir /opt/repo/logs
-sed -i 's/opt\/repo:\/bin\/bash/opt\/repo\/versions\/8.0.9\/temp:\/bin\/bash/g' "/etc/passwd"
 ln -s /opt/repo/versions/8.0.9/logs /opt/repo/logs
