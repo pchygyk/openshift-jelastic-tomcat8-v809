@@ -12,5 +12,7 @@ if [ -d "/opt/repo/.ssh" ] ; then
     mv /opt/repo/.ssh /opt/repo/home/
 fi
 
+[ -f "/opt/repo/.bash_profile" ] && cp /opt/repo/.bash_profile /opt/repo/home/
+
 [ -d "/opt/repo/logs" ] && rmdir /opt/repo/logs
 ln -s /opt/repo/versions/8.0.9/logs /opt/repo/logs
