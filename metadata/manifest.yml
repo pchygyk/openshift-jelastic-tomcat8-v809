@@ -41,4 +41,8 @@ Endpoints:
     Private-Port-Name: APP_PORT
     Private-Port:      8080
     Public-Port-Name:  APP_PROXY_PORT
+  - Private-IP-Name:   AJP_HOST
+    Private-Port-Name: AJP_PORT
+    Private-Port:      8009
+    Public-Port-Name:  AJP_PROXY_PORT
 
