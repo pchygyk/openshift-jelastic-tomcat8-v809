@@ -58,7 +58,7 @@ APP_ENV="/opt/repo/versions/8.0.9/conf/tomcat-env.sh"
 TOMCAT_SCRIPT=$CATALINA_HOME/bin/catalina.sh
 
 # The name of this program.
-PROG="$0"
+PROG="Tomcat8"
 
 # Resolve links - $0 may be a soft link.
 while [ -h "$PROG" ]; do
@@ -252,6 +252,8 @@ start() {
 }
 
 stop() {
+   sudo service cartridge status > /dev/null 2>&1;
+   [ $? == "1" ] && { echo "$PROG is already stopped"; return 0; }
    #for disable autostart 
    #stopped_=$(echo '1' >  /home/scripts/tomcat_stopped)
     echo -n "Stopping $PROG: "
