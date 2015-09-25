@@ -148,9 +148,6 @@ function _deploy(){
     _applyPostDeploy;
     _clearCache; 
     startService ${SERVICE} > /dev/null 2>&1;
-
-    verifyUnpackedContent "${context}";
-
 }
 
 function _undeploy(){
