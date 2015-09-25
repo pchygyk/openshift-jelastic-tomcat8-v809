@@ -92,7 +92,7 @@ function verifyUnpackedContent(){
                     [ ! -z $jetty_context_dir  ] &&  content_path="${WORKDIR}/${jetty_context_dir}" || content_path="NoPath";
         };
 
-        [ -n "${content_path}" ] && [ -d $content_path ] && {
+        [ -d $content_path ] && {
 
             content_size_step1=$($DU -s $content_path);
             sleep $pull_inverval_for_content;
