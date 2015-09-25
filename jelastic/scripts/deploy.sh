@@ -83,14 +83,8 @@ function verifyUnpackedContent(){
 
         local content_path;
 
-        [ ${COMPUTE_TYPE} == "tomcat" ] && { 
-                    content_path="${WEBROOT}/${context}";
-        };
-
-        [ ${COMPUTE_TYPE} == "jetty" ] && { 
-                    local jetty_context_dir=$(ls -1 ${WORKDIR}/ | grep ${context} | head -n 1);
-                    [ ! -z $jetty_context_dir  ] &&  content_path="${WORKDIR}/${jetty_context_dir}" || content_path="NoPath";
-        };
+    	content_path="${WEBROOT}/${context}";
+        
 
         [ -d $content_path ] && {
 
