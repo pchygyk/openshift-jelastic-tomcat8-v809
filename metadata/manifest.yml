@@ -1,7 +1,7 @@
-Name: tomcat8
-Cartridge-Short-Name: TOMCAT8
-Display-Name: TOMCAT82.1
-Description: "Jelastic Tomcat8"
+Name: tomcat9
+Cartridge-Short-Name: TOMCAT9
+Display-Name: TOMCAT9
+Description: "Jelastic Tomcat9"
 Version: '8.0.9'
 License: 'Apache licence'
 License-Url: 
