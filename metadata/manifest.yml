@@ -1,5 +1,5 @@
-Name: tomcat8
-Cartridge-Short-Name: TOMCAT8
+Name: tomcat82.1
+Cartridge-Short-Name: TOMCAT82.1
 Display-Name: TOMCAT82.1
 Description: "Jelastic Tomcat8"
 Version: '8.0.9'
