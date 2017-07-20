@@ -1,5 +1,5 @@
-Name: tomcat9
-Cartridge-Short-Name: TOMCAT9
+Name: tomcat9-test
+Cartridge-Short-Name: TOMCAT9-TEST
 Display-Name: TOMCAT9
 Description: "Jelastic Tomcat8"
 Version: '8.0.9'
